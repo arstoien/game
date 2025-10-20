@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://britxckof2dll"]
 
 [ext_resource type="Script" uid="uid://budqfb0xvyugq" path="res://Scenes/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://by3q0muxhuf72" path="res://Assets/Assets/MCForward.png" id="1_rpqav"]
-[ext_resource type="Texture2D" uid="uid://blp8503chkipi" path="res://Assets/Assets/MCBackwards.png" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://by3q0muxhuf72" path="res://Assets/Assets/MCDown.png" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://blp8503chkipi" path="res://Assets/Assets/MCUp.png" id="2_gntrk"]
 [ext_resource type="Texture2D" uid="uid://dn1tol8yfq4du" path="res://Assets/Assets/MCLeft.png" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://dilcrbodkqlqe" path="res://Assets/Assets/MCRight.png" id="5_nn08x"]
 
@@ -78,6 +78,13 @@ region = Rect2(64, 0, 64, 64)
 atlas = ExtResource("5_nn08x")
 region = Rect2(64, 0, 64, 64)
 
+<<<<<<< HEAD
+[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
+atlas = ExtResource("2_gntrk")
+region = Rect2(0, 0, 64, 64)
+
+=======
+>>>>>>> 26b8351c95e3317cee8a6bff5791e08b0f265545
 [sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
 atlas = ExtResource("2_gntrk")
 region = Rect2(64, 0, 64, 64)
@@ -86,6 +93,8 @@ region = Rect2(64, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.5,
+<<<<<<< HEAD
+=======
 "texture": SubResource("AtlasTexture_kyqiw")
 }],
 "loop": true,
@@ -118,6 +127,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.5,
+>>>>>>> 26b8351c95e3317cee8a6bff5791e08b0f265545
 "texture": SubResource("AtlasTexture_kyqiw")
 }, {
 "duration": 1.5,
@@ -177,6 +187,7 @@ position = Vector2(0, -30.5)
 shape = SubResource("RectangleShape2D_5ixxa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+texture_filter = 1
 position = Vector2(0, -30)
 sprite_frames = SubResource("SpriteFrames_dewec")
 animation = &"IdleUp"

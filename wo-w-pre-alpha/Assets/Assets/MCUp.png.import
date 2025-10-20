@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blp8503chkipi"
-path="res://.godot/imported/MCBackwards.png-9a8fa771c254e3806e3f25a2ff3c4621.ctex"
+path="res://.godot/imported/MCUp.png-edf00ce3f203202f667c86ea6436eeec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets/MCBackwards.png"
-dest_files=["res://.godot/imported/MCBackwards.png-9a8fa771c254e3806e3f25a2ff3c4621.ctex"]
+source_file="res://Assets/Assets/MCUp.png"
+dest_files=["res://.godot/imported/MCUp.png-edf00ce3f203202f667c86ea6436eeec.ctex"]
 
 [params]
 
