@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://britxckof2dll"]
 
 [ext_resource type="Script" uid="uid://budqfb0xvyugq" path="res://Scenes/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://by3q0muxhuf72" path="res://Assets/Assets/MCForward.png" id="1_rpqav"]
-[ext_resource type="Texture2D" uid="uid://blp8503chkipi" path="res://Assets/Assets/MCBackwards.png" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://by3q0muxhuf72" path="res://Assets/Assets/MCDown.png" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://blp8503chkipi" path="res://Assets/Assets/MCUp.png" id="2_gntrk"]
 [ext_resource type="Texture2D" uid="uid://dn1tol8yfq4du" path="res://Assets/Assets/MCLeft.png" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://dilcrbodkqlqe" path="res://Assets/Assets/MCRight.png" id="5_nn08x"]
 
@@ -50,14 +50,6 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ixxa"]
 size = Vector2(16, 61)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
-atlas = ExtResource("2_gntrk")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
-atlas = ExtResource("2_gntrk")
-region = Rect2(64, 0, 64, 64)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyqiw"]
 atlas = ExtResource("1_rpqav")
 region = Rect2(0, 0, 64, 64)
@@ -82,19 +74,16 @@ region = Rect2(0, 0, 64, 64)
 atlas = ExtResource("5_nn08x")
 region = Rect2(64, 0, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
+atlas = ExtResource("2_gntrk")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
+atlas = ExtResource("2_gntrk")
+region = Rect2(64, 0, 64, 64)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_dewec"]
 animations = [{
-"frames": [{
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_dewec")
-}, {
-"duration": 1.5,
-"texture": SubResource("AtlasTexture_5ixxa")
-}],
-"loop": true,
-"name": &"MCDown",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.5,
 "texture": SubResource("AtlasTexture_kyqiw")
@@ -103,7 +92,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_gntrk")
 }],
 "loop": true,
-"name": &"MCForward",
+"name": &"MCDown",
 "speed": 5.0
 }, {
 "frames": [{
@@ -127,6 +116,17 @@ animations = [{
 "loop": true,
 "name": &"MCRight",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_dewec")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_5ixxa")
+}],
+"loop": true,
+"name": &"MCUp",
+"speed": 5.0
 }]
 
 [node name="Game" type="Node2D"]
@@ -145,6 +145,7 @@ position = Vector2(0, -30.5)
 shape = SubResource("RectangleShape2D_5ixxa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+texture_filter = 1
 position = Vector2(0, -30)
 sprite_frames = SubResource("SpriteFrames_dewec")
 animation = &"MCDown"

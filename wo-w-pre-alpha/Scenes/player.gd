@@ -24,6 +24,5 @@ func _physics_process(_delta: float) -> void:
 	# --- animation logic ---
 	if input_dir.y > 0.0:
 		facing = "down"
-		if anim.animation != "MCDown":
-			anim.play("MCDown")
-	else: input_dir == Vector2.ZERO
+	if facing == "down":
+		anim.play ("MCDown")
