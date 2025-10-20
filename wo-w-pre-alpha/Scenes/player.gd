@@ -54,3 +54,5 @@ func _physics_process(_delta: float) -> void:
 		elif facing == "left":
 			if anim.animation != "IdleLeft":
 				anim.play("IdleLeft")
+				
+#silly comment
