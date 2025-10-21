@@ -21,11 +21,7 @@ func _physics_process(_delta: float) -> void:
 
 	move_and_slide()
 
-<<<<<<< Updated upstream
 
-=======
-	# --- animation logic ---
->>>>>>> Stashed changes
 	if input_dir != Vector2.ZERO:
 		# Player is moving
 		if input_dir.y > 0.0:
@@ -58,16 +54,3 @@ func _physics_process(_delta: float) -> void:
 		elif facing == "left":
 			if anim.animation != "IdleLeft":
 				anim.play("IdleLeft")
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-				
-#silly comment
-=======
->>>>>>> 26b8351c95e3317cee8a6bff5791e08b0f265545
->>>>>>> 5c9cc397f7c36abe3e9a5fd7835f30cbd0b16880
->>>>>>> b0a03ff51a9328a8e73e80218b1a01684990acbe
-=======
-#silly comment
->>>>>>> Stashed changes
