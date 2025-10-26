@@ -1,37 +1,24 @@
-[gd_scene load_steps=20 format=3 uid="uid://c7tvaa7nu1kyy"]
+[gd_scene load_steps=19 format=3 uid="uid://c7tvaa7nu1kyy"]
 
 [ext_resource type="Texture2D" uid="uid://bisxd3flkhh25" path="res://Assets/Assets/MC movement/MCBackwards/MCDown.png" id="1_pbq55"]
-[ext_resource type="Texture2D" uid="uid://bh5c64mn0b5vm" path="res://Assets/Assets/MC movement/MCBackwards/MCGeneral.png.png" id="2_t38ji"]
+[ext_resource type="Texture2D" uid="uid://b0jry3sx0ft2a" path="res://Assets/Assets/MC movement/MCIdle/Idledown.png" id="2_fxof2"]
+[ext_resource type="Texture2D" uid="uid://djoths2g1afo4" path="res://Assets/Assets/MC movement/MCIdle/IdleLeft.png" id="3_601d1"]
 [ext_resource type="Texture2D" uid="uid://c4r5b0h7bay4t" path="res://Assets/Assets/MC movement/MCLeft/MCLeft.png" id="3_pbj7x"]
+[ext_resource type="Texture2D" uid="uid://bnpejn6k7wjq5" path="res://Assets/Assets/MC movement/MCIdle/Idleright.png" id="4_6d06k"]
 [ext_resource type="Texture2D" uid="uid://cvdf6s170ukad" path="res://Assets/Assets/MC movement/MCRight/MCRight.png" id="4_fxof2"]
 [ext_resource type="Texture2D" uid="uid://f75ljmiyalg3" path="res://Assets/Assets/MC movement/MCForward/MCUp.png" id="5_601d1"]
+[ext_resource type="Texture2D" uid="uid://wgvdlcdqrrsu" path="res://Assets/Assets/MC movement/MCIdle/IdleUp.png" id="5_p20bj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6d06k"]
 size = Vector2(12, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
-atlas = ExtResource("1_pbq55")
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
+atlas = ExtResource("5_601d1")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
-atlas = ExtResource("1_pbq55")
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
+atlas = ExtResource("5_601d1")
 region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
-atlas = ExtResource("2_t38ji")
-region = Rect2(0, 0, 41, 62)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
-atlas = ExtResource("2_t38ji")
-region = Rect2(0, 62, 41, 62)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qqcod"]
-atlas = ExtResource("2_t38ji")
-region = Rect2(41, 62, 41, 62)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
-atlas = ExtResource("2_t38ji")
-region = Rect2(41, 0, 41, 62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
 atlas = ExtResource("3_pbj7x")
@@ -49,22 +36,22 @@ region = Rect2(0, 0, 64, 64)
 atlas = ExtResource("4_fxof2")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
-atlas = ExtResource("5_601d1")
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("1_pbq55")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
-atlas = ExtResource("5_601d1")
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+atlas = ExtResource("1_pbq55")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p20bj"]
 animations = [{
 "frames": [{
 "duration": 1.5,
-"texture": SubResource("AtlasTexture_f1ek2")
+"texture": SubResource("AtlasTexture_h4iuc")
 }, {
 "duration": 1.5,
-"texture": SubResource("AtlasTexture_tx1dd")
+"texture": SubResource("AtlasTexture_fd4e3")
 }],
 "loop": true,
 "name": &"MCDown",
@@ -72,7 +59,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3smsa")
+"texture": ExtResource("2_fxof2")
 }],
 "loop": true,
 "name": &"MCIdleDown",
@@ -80,7 +67,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8erm5")
+"texture": ExtResource("3_601d1")
 }],
 "loop": true,
 "name": &"MCIdleLeft",
@@ -88,7 +75,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qqcod")
+"texture": ExtResource("4_6d06k")
 }],
 "loop": true,
 "name": &"MCIdleRight",
@@ -96,7 +83,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_igrcy")
+"texture": ExtResource("5_p20bj")
 }],
 "loop": true,
 "name": &"MCIdleUp",
@@ -126,10 +113,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.5,
-"texture": SubResource("AtlasTexture_h4iuc")
+"texture": SubResource("AtlasTexture_f1ek2")
 }, {
 "duration": 1.5,
-"texture": SubResource("AtlasTexture_fd4e3")
+"texture": SubResource("AtlasTexture_tx1dd")
 }],
 "loop": true,
 "name": &"MCUp",
@@ -146,4 +133,4 @@ shape = SubResource("RectangleShape2D_6d06k")
 texture_filter = 1
 position = Vector2(2, 10)
 sprite_frames = SubResource("SpriteFrames_p20bj")
-animation = &"MCLeft"
+animation = &"MCIdleUp"
