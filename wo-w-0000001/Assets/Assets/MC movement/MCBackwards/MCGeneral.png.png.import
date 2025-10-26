@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blp8503chkipi"
-path="res://.godot/imported/MCUp.png-edf00ce3f203202f667c86ea6436eeec.ctex"
+uid="uid://bh5c64mn0b5vm"
+path="res://.godot/imported/MCGeneral.png.png-662741570990c2670e6f8fe6947eee42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets/MCUp.png"
-dest_files=["res://.godot/imported/MCUp.png-edf00ce3f203202f667c86ea6436eeec.ctex"]
+source_file="res://Assets/Assets/MC movement/MCBackwards/MCGeneral.png.png"
+dest_files=["res://.godot/imported/MCGeneral.png.png-662741570990c2670e6f8fe6947eee42.ctex"]
 
 [params]
 

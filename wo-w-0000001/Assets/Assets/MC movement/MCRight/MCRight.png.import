@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn1tol8yfq4du"
-path="res://.godot/imported/MCLeft.png-1e421dbb133c2462881489b3fd61e22c.ctex"
+uid="uid://cvdf6s170ukad"
+path="res://.godot/imported/MCRight.png-2b6a8ce33681e66d28f11ce3b295cd5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets/MCLeft.png"
-dest_files=["res://.godot/imported/MCLeft.png-1e421dbb133c2462881489b3fd61e22c.ctex"]
+source_file="res://Assets/Assets/MC movement/MCRight/MCRight.png"
+dest_files=["res://.godot/imported/MCRight.png-2b6a8ce33681e66d28f11ce3b295cd5f.ctex"]
 
 [params]
 

@@ -1,0 +1,149 @@
+[gd_scene load_steps=20 format=3 uid="uid://c7tvaa7nu1kyy"]
+
+[ext_resource type="Texture2D" uid="uid://bisxd3flkhh25" path="res://Assets/Assets/MC movement/MCBackwards/MCDown.png" id="1_pbq55"]
+[ext_resource type="Texture2D" uid="uid://bh5c64mn0b5vm" path="res://Assets/Assets/MC movement/MCBackwards/MCGeneral.png.png" id="2_t38ji"]
+[ext_resource type="Texture2D" uid="uid://c4r5b0h7bay4t" path="res://Assets/Assets/MC movement/MCLeft/MCLeft.png" id="3_pbj7x"]
+[ext_resource type="Texture2D" uid="uid://cvdf6s170ukad" path="res://Assets/Assets/MC movement/MCRight/MCRight.png" id="4_fxof2"]
+[ext_resource type="Texture2D" uid="uid://f75ljmiyalg3" path="res://Assets/Assets/MC movement/MCForward/MCUp.png" id="5_601d1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6d06k"]
+size = Vector2(12, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("1_pbq55")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+atlas = ExtResource("1_pbq55")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
+atlas = ExtResource("2_t38ji")
+region = Rect2(0, 0, 41, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+atlas = ExtResource("2_t38ji")
+region = Rect2(0, 62, 41, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqcod"]
+atlas = ExtResource("2_t38ji")
+region = Rect2(41, 62, 41, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
+atlas = ExtResource("2_t38ji")
+region = Rect2(41, 0, 41, 62)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
+atlas = ExtResource("3_pbj7x")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
+atlas = ExtResource("3_pbj7x")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukyrk"]
+atlas = ExtResource("4_fxof2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
+atlas = ExtResource("4_fxof2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
+atlas = ExtResource("5_601d1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
+atlas = ExtResource("5_601d1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p20bj"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_f1ek2")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_tx1dd")
+}],
+"loop": true,
+"name": &"MCDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3smsa")
+}],
+"loop": true,
+"name": &"MCIdleDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8erm5")
+}],
+"loop": true,
+"name": &"MCIdleLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqcod")
+}],
+"loop": true,
+"name": &"MCIdleRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igrcy")
+}],
+"loop": true,
+"name": &"MCIdleUp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_gymyn")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_pu2lt")
+}],
+"loop": true,
+"name": &"MCLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ukyrk")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_7dp3o")
+}],
+"loop": true,
+"name": &"MCRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_h4iuc")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_fd4e3")
+}],
+"loop": true,
+"name": &"MCUp",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_6d06k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2, 10)
+sprite_frames = SubResource("SpriteFrames_p20bj")
+animation = &"MCLeft"

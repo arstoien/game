@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by3q0muxhuf72"
-path="res://.godot/imported/MCDown.png-e62d11e1430f18e644e07b7636bdd5ba.ctex"
+uid="uid://bisxd3flkhh25"
+path="res://.godot/imported/MCDown.png-f89c8111af167822d0e4aedba02c2fb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets/MCDown.png"
-dest_files=["res://.godot/imported/MCDown.png-e62d11e1430f18e644e07b7636bdd5ba.ctex"]
+source_file="res://Assets/Assets/MC movement/MCBackwards/MCDown.png"
+dest_files=["res://.godot/imported/MCDown.png-f89c8111af167822d0e4aedba02c2fb0.ctex"]
 
 [params]
 
