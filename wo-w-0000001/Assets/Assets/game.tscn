@@ -1,7 +1,48 @@
-[gd_scene load_steps=3 format=3 uid="uid://ck56mbpelsnix"]
+[gd_scene load_steps=11 format=3 uid="uid://ck56mbpelsnix"]
 
 [ext_resource type="PackedScene" uid="uid://c7tvaa7nu1kyy" path="res://Scenes/character_body_2d.tscn" id="1_oa6bc"]
 [ext_resource type="Script" uid="uid://bkeciiy00kkkd" path="res://Scenes/character_body_2d.gd" id="2_5p82k"]
+[ext_resource type="Texture2D" uid="uid://duw11scyhxn84" path="res://Assets/Assets/WENDIGOON.01 spriteshit.png" id="3_03v41"]
+[ext_resource type="Script" uid="uid://qc3jaikg3ier" path="res://Assets/Assets/enemy.gd" id="3_crst7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crst7"]
+size = Vector2(20, 60.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sinuc"]
+atlas = ExtResource("3_03v41")
+region = Rect2(0, 100, 64, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f4sy"]
+atlas = ExtResource("3_03v41")
+region = Rect2(64, 100, 64, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7eyw"]
+atlas = ExtResource("3_03v41")
+region = Rect2(128, 100, 64, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0757j"]
+atlas = ExtResource("3_03v41")
+region = Rect2(192, 100, 64, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7gbhp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sinuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5f4sy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7eyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0757j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D"]
 
@@ -11,3 +52,16 @@ script = ExtResource("2_5p82k")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
+
+[node name="enemy" type="CharacterBody2D" parent="."]
+position = Vector2(1, -33)
+motion_mode = 1
+script = ExtResource("3_crst7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy"]
+position = Vector2(78, 3.25)
+shape = SubResource("RectangleShape2D_crst7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enemy"]
+position = Vector2(78, -17)
+sprite_frames = SubResource("SpriteFrames_7gbhp")
