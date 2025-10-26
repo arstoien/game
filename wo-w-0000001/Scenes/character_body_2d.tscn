@@ -1,16 +1,16 @@
 [gd_scene load_steps=19 format=3 uid="uid://c7tvaa7nu1kyy"]
 
 [ext_resource type="Texture2D" uid="uid://bisxd3flkhh25" path="res://Assets/Assets/MC movement/MCBackwards/MCDown.png" id="1_pbq55"]
-[ext_resource type="Texture2D" uid="uid://b0jry3sx0ft2a" path="res://Assets/Assets/MC movement/MCIdle/Idledown.png" id="2_fxof2"]
+[ext_resource type="Texture2D" uid="uid://b0jry3sx0ft2a" path="res://Assets/Assets/MC movement/MCIdle/IdleDown.png" id="2_fxof2"]
 [ext_resource type="Texture2D" uid="uid://djoths2g1afo4" path="res://Assets/Assets/MC movement/MCIdle/IdleLeft.png" id="3_601d1"]
 [ext_resource type="Texture2D" uid="uid://c4r5b0h7bay4t" path="res://Assets/Assets/MC movement/MCLeft/MCLeft.png" id="3_pbj7x"]
 [ext_resource type="Texture2D" uid="uid://bnpejn6k7wjq5" path="res://Assets/Assets/MC movement/MCIdle/Idleright.png" id="4_6d06k"]
 [ext_resource type="Texture2D" uid="uid://cvdf6s170ukad" path="res://Assets/Assets/MC movement/MCRight/MCRight.png" id="4_fxof2"]
-[ext_resource type="Texture2D" uid="uid://f75ljmiyalg3" path="res://Assets/Assets/MC movement/MCForward/MCUp.png" id="5_601d1"]
+[ext_resource type="Texture2D" uid="uid://baprfiyv1ahv2" path="res://Assets/Assets/MC movement/MCForward/MCUp.png" id="5_601d1"]
 [ext_resource type="Texture2D" uid="uid://wgvdlcdqrrsu" path="res://Assets/Assets/MC movement/MCIdle/IdleUp.png" id="5_p20bj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6d06k"]
-size = Vector2(12, 60)
+size = Vector2(22, 61)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
 atlas = ExtResource("5_601d1")
@@ -126,7 +126,7 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(2, 11.5)
 shape = SubResource("RectangleShape2D_6d06k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

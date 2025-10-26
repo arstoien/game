@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0jry3sx0ft2a"
-path="res://.godot/imported/IdleDown.png-52542d699645510e9edb50b11f5d4b95.ctex"
+uid="uid://b4grjmacb6etk"
+path="res://.godot/imported/placeholder.png-36b2ed5674fdf2993ccb07ee33252393.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets/MC movement/MCIdle/IdleDown.png"
-dest_files=["res://.godot/imported/IdleDown.png-52542d699645510e9edb50b11f5d4b95.ctex"]
+source_file="res://Assets/Assets/Enemies/placeholder.png"
+dest_files=["res://.godot/imported/placeholder.png-36b2ed5674fdf2993ccb07ee33252393.ctex"]
 
 [params]
 
