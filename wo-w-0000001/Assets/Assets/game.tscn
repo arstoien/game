@@ -1,6 +1,7 @@
 [gd_scene load_steps=9 format=4 uid="uid://ck56mbpelsnix"]
 
 [ext_resource type="PackedScene" uid="uid://c7tvaa7nu1kyy" path="res://Scenes/character_body_2d.tscn" id="1_oa6bc"]
+<<<<<<< Updated upstream
 [ext_resource type="Script" uid="uid://bkeciiy00kkkd" path="res://character_body_2d.gd" id="2_5p82k"]
 [ext_resource type="Texture2D" uid="uid://n5ky854jsiu8" path="res://Assets/Assets/background/grass_0.1.png" id="3_03v41"]
 [ext_resource type="Script" uid="uid://cje0o17phi287" path="res://Assets/Assets/enemy_1.gd" id="4_crst7"]
@@ -30,6 +31,9 @@ sources/0 = SubResource("TileSetAtlasSource_crst7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5f4sy"]
 size = Vector2(16.984375, 16.375)
+=======
+[ext_resource type="Script" path="res://character_body_2d.gd" id="2_5p82k"]
+>>>>>>> Stashed changes
 
 [node name="Game" type="Node2D"]
 
