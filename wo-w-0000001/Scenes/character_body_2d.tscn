@@ -136,10 +136,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(1, 13)
 shape = SubResource("RectangleShape2D_6d06k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
